@@ -1,0 +1,5 @@
+<RCC>
+  <qresource prefix="/">
+    <file>xmlscheme/seedlink.stream.xsd</file>
+  </qresource>
+</RCC>
