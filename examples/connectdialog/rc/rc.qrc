@@ -1,0 +1,19 @@
+<RCC>
+    <qresource prefix="/">
+        <file>icons/appicon.png</file>
+        <file>icons/disk_blue.png</file>
+        <file>icons/document.png</file>
+        <file>icons/exit.png</file>
+        <file>icons/folder.png</file>
+        <file>icons/navigate_left.png</file>
+        <file>icons/navigate_left2.png</file>
+        <file>icons/navigate_plus.png</file>
+        <file>icons/navigate_right.png</file>
+        <file>icons/navigate_right2.png</file>
+        <file>icons/refresh.png</file>
+        <file>icons/save_as.png</file>
+    </qresource>
+    <qresource prefix="/qseedlinkviewer">
+        <file>xmlscheme/connection.preset.v1.xsd</file>
+    </qresource>
+</RCC>

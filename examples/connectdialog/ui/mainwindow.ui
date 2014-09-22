@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>799</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QHBoxLayout" name="horizontalLayout">
+    <property name="spacing">
+     <number>0</number>
+    </property>
+    <property name="margin">
+     <number>0</number>
+    </property>
+    <item>
+     <widget class="QMdiArea" name="mdiArea">
+      <property name="tabsClosable">
+       <bool>true</bool>
+      </property>
+      <property name="tabsMovable">
+       <bool>true</bool>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>799</width>
+     <height>18</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menu_File">
+    <property name="title">
+     <string>&amp;File</string>
+    </property>
+    <addaction name="action_ConnectionNew"/>
+    <addaction name="action_Reconnect"/>
+    <addaction name="action_Close_connection"/>
+    <addaction name="actionClose_all_connections"/>
+    <addaction name="separator"/>
+    <addaction name="action_Quit"/>
+   </widget>
+   <widget class="QMenu" name="menu_Edit">
+    <property name="title">
+     <string>&amp;Edit</string>
+    </property>
+    <addaction name="actionEdit_stream_list"/>
+   </widget>
+   <widget class="QMenu" name="menu_Window">
+    <property name="title">
+     <string>&amp;Window</string>
+    </property>
+    <widget class="QMenu" name="menu_View_mode">
+     <property name="title">
+      <string>&amp;View mode</string>
+     </property>
+     <addaction name="action_SubWindowViewMode"/>
+     <addaction name="action_TabbedViewMode"/>
+    </widget>
+    <addaction name="menu_View_mode"/>
+   </widget>
+   <widget class="QMenu" name="menu_Help">
+    <property name="title">
+     <string>&amp;Help</string>
+    </property>
+    <addaction name="actionQt_SeedLink_Viewer_Help"/>
+    <addaction name="separator"/>
+    <addaction name="action_About"/>
+    <addaction name="actionAbout_Qt"/>
+   </widget>
+   <addaction name="menu_File"/>
+   <addaction name="menu_Edit"/>
+   <addaction name="menu_Window"/>
+   <addaction name="menu_Help"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <widget class="QToolBar" name="toolBar">
+   <property name="windowTitle">
+    <string>toolBar</string>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+  </widget>
+  <action name="action_Quit">
+   <property name="text">
+    <string>&amp;Quit...</string>
+   </property>
+  </action>
+  <action name="action_ConnectionNew">
+   <property name="text">
+    <string>&amp;New connection...</string>
+   </property>
+  </action>
+  <action name="action_Close_connection">
+   <property name="text">
+    <string>&amp;Close connection...</string>
+   </property>
+  </action>
+  <action name="actionClose_all_connections">
+   <property name="text">
+    <string>Close &amp;all connections...</string>
+   </property>
+  </action>
+  <action name="action_SubWindowViewMode">
+   <property name="checked">
+    <bool>false</bool>
+   </property>
+   <property name="text">
+    <string>&amp;Sub window view</string>
+   </property>
+  </action>
+  <action name="action_TabbedViewMode">
+   <property name="text">
+    <string>&amp;Tabbet view</string>
+   </property>
+  </action>
+  <action name="action_About">
+   <property name="text">
+    <string>&amp;About Qt SeedLink Viewer...</string>
+   </property>
+  </action>
+  <action name="actionAbout_Qt">
+   <property name="text">
+    <string>About &amp;Qt...</string>
+   </property>
+  </action>
+  <action name="action_Manual">
+   <property name="text">
+    <string>&amp;Manual...</string>
+   </property>
+  </action>
+  <action name="actionQt_SeedLink_Viewer_Help">
+   <property name="text">
+    <string>Qt SeedLink Viewer &amp;Help...</string>
+   </property>
+  </action>
+  <action name="action_Reconnect">
+   <property name="text">
+    <string>&amp;Reconnect...</string>
+   </property>
+  </action>
+  <action name="actionEdit_stream_list">
+   <property name="text">
+    <string>Edit &amp;stream list...</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
